@@ -33,4 +33,19 @@
 // const isChecked = true,
 //       isClose = false;
 // console.log(isChecked && isClose);
-const numverOfFilms = 'Скільки фільмів ви переглянули ?';
+const numverOfFilms = +prompt('Скільки фільмів ви переглянули ?', '');
+const personalMovieDB = {
+    count: numverOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false
+};
+const a = prompt('Один з останіх переглянутих фільмів', ''),
+      b = prompt('Яку оцінку поставите йому', ''),
+      c = prompt('Один з останіх переглянутих фільмів', ''),
+      d = prompt('Яку оцінку поставите йому', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
